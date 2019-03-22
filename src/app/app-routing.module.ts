@@ -5,7 +5,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path: 'home', component: AppComponent },
+  {path: '', component: HomeComponent },
+  {path: 'home', component: HomeComponent },
   {path: 'resume', component: ResumeComponent },
   {path: 'contacts', component: ContactsComponent }
 ];

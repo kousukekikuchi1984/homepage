@@ -1,26 +1,7 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<app-header></app-header>
 
-<!-- Landing Screen -->
-<div class="section" id="landing">
-  <h4 id="mainText" class="center">My name is</h4>
-  <h1 class="center">
-    Kosuke <b>Kikuchi</b>
-  </h1>
-  <h5 id="mainText" class="center">An Full-stack Engineer
-    from Infra to Frontend and Deep Learning</h5>
+<div class="container">
+  <router-outlet></router-outlet>
 </div>
 
-<!-- FIXED ACTION BUTTON -->
-<div class="fixed-action-btn vertical">
-    <a class="btn-floating btn-large  blue-grey darken-4">
-        <i class="fa fa-globe"></i>
-    </a>
-    <ul>
-        <li><a class="btn-floating  blue darken-4"><i class="fab fa-facebook"></i></a></li>
-        <li><a class="btn-floating cyan lighten-1"><i class="fab fa-twitter"></i></a></li>
-        <li><a class="btn-floating grey darken-3"> <i class="fab fa-github"></i></a></li>
-        <li><a class="btn-floating blue-grey lighten-1"><i class="fab fa-linkedin"></i></a></li>
-    </ul>
-</div>
-
-<router-outlet></router-outlet>
+<app-footer></app-footer>
