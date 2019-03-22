@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+#landing {
+  height: 100vh;
+  background-position: center;
+  background-image: url("/assets/img/city.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+#mainText {
+  margin-top: 30vh;
+}
+
+body {
+  background-color: #616161;
+  color: #e0e0e0;
+}
