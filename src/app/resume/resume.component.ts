@@ -12,4 +12,6 @@ export class ResumeComponent implements OnInit {
   ngOnInit() {
   }
 
+  text = "kou2k";
+
 }
