@@ -10,7 +10,7 @@ export class ResumeComponent implements OnInit {
 
   summary: string;
   executive_summary: string;
-  companies: Array;
+  companies: Array<any>;
 
   constructor() {
   }
