@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as data from '../data/resume.json';
 
 @Component({
   selector: 'app-resume',
@@ -7,11 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
+  summary: string;
+  executive_summary: string;
+  companies: Array;
 
-  ngOnInit() {
+  constructor() {
   }
 
-  text = "kou2k";
-
+  ngOnInit() {
+    this.summary = (<any>data).summary;
+    this.executive_summary = (<any>data).executive_summary;
+    this.companies = (<any>data).companies;
+    console.log(this.companies);
+  }
 }
