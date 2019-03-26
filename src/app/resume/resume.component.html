@@ -9,6 +9,11 @@
     <p>
       {{summary}}
     </p>
+    <p>
+      <a href="https://docs.google.com/document/d/1O0Gkvem7d2tDAjVT0Sd16QYr_44cSMWRMbeSPNKSzss/edit?usp=sharing">
+        Detailed Japanese Resume
+      </a>
+    </p>
     <ul class="social_media">
       <p><a href="https://twitter.com/kou2kkkt"><i class="fab fa-twitter"></i></a></p>
       <p><a href="https://facebook.com/kou2k"><i class="fab fa-facebook"></i></a></p>
@@ -16,6 +21,7 @@
       <p><a href="https://github.com/kousukekikuchi1984"><i class="fab fa-github">  </i></a></p>
       <p><a href="https://medium.com/@kousukekikuchi"><i class="fab fa-medium">  </i></a></p>
     </ul>
+
   </div>
 
   <div class="col s12 m12 l9">
@@ -25,8 +31,17 @@
     </div>
 
     <h5>Companies</h5>
-    {{companies[0].name}}
-
+    <ul *ngFor="let company of companies" class="companies">
+      <h6>{{company.name}}</h6>
+      <li>{{company.from}} ~ {{company.to}}</li>
+      <ul class="collection">
+        <li class="collection-item avatar" *ngFor="let project of company.projects">
+          <h6 class="title">{{project.name}}</h6>
+          <p>{{project.from}} ~ {{project.to}}</p>
+          <p>{{project.description}}</p>
+        </li>
+      </ul>
+    </ul>
     <h5>Skills</h5>
     <div class="skills">
       <img src="/assets/img/python.png">

@@ -19,6 +19,5 @@ export class ResumeComponent implements OnInit {
     this.summary = (<any>data).summary;
     this.executive_summary = (<any>data).executive_summary;
     this.companies = (<any>data).companies;
-    console.log(this.companies);
   }
 }
