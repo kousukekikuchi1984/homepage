@@ -27,10 +27,6 @@ div {
   }
 }
 
-.educations {
-  color: #616161;
-}
-
 // IONIC DEFAULT THEME COLORS
 $colors: (
   primary:    #387ef5,
@@ -107,3 +103,12 @@ table, th, td {
     }
   }
 }
+
+.educations {
+  color: #616161;
+  i .circle {
+    background-color: white;
+    color: black;
+  }
+}
+
