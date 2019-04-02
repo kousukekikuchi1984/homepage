@@ -51,4 +51,4 @@ Thumbs.db
 firebase.json
 
 ## confidential
-.src/environments/environment.prod.ts
+src/environments/environment.prod.ts
