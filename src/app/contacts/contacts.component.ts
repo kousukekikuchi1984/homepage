@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as data from '../data/resume.json';
+import data from '../data/resume.json';
 
 @Component({
   selector: 'app-contacts',
