@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ResumeComponent } from './resume.component';
 
@@ -6,9 +6,9 @@ describe('ResumeComponent', () => {
   let component: ResumeComponent;
   let fixture: ComponentFixture<ResumeComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResumeComponent ]
+      imports: [ ResumeComponent ]
     })
     .compileComponents();
   }));
@@ -16,7 +16,6 @@ describe('ResumeComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ResumeComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
